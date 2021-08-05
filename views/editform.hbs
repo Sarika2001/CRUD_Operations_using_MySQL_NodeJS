@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h1>{{title}}</h1>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <form action="/products/edit/{{product.ID}}" method="post">
+          <div class="form-group">
+              <input type="text" name="INAME" class="form-control" value={{product.INAME}} placeholder="INAME" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="EMAIL" class="form-control" value={{product.EMAIL}} placeholder="EMAIL" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="PRICE" class="form-control" value={{product.PRICE}} placeholder="PRICE" />
+          </div>
+          <div class="form-group">
+              <button class="btn btn-info">Save Product</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>

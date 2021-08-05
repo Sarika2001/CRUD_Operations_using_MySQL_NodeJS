@@ -1,0 +1,25 @@
+<div class="container">
+  <h2>CRUD Operation using Node JS AND SQL</h2>
+  <a href="/products/create-form" class="btn btn-success">Create Product</a>
+  <br /><br />
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>INAME</th>
+      <th>DESCRIPTION</th>
+      <th>PRICE</th>
+    </tr>
+    {{#each products}}
+      <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.INAME}}</td>
+        <td>{{this.EMAIL}}</td>
+        <td>{{this.PRICE}}</td>
+        <td>
+            <a href="/products/edit-form/{{this.ID}}" class="btn btn-info btn-sm">Edit</a>
+            <a href="/products/delete/{{this.ID}}" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
